@@ -1,0 +1,92 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+body {
+  background: royalblue;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 400px;
+  overflow: hidden;
+}
+
+.box {
+  position: relative;
+  width: 100%;
+  background: white;
+  padding: 30px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.box .input-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box .input-wrapper .input, 
+.box .input-wrapper .button {
+  position: relative;
+  padding: 12px 15px;
+}
+
+.box .input-wrapper .input {
+  background: #f4f7fe;
+  font-weight: 400;
+}
+
+.box .input-wrapper .button {
+  background: royalblue;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.box .message-box {
+  position: relative;
+  background: #4caf50;
+  margin-top: 20px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.box .message-box.success {
+  background: #4caf50;
+}
+
+.box .message-box.error {
+  background: red;
+}
+
+.box .message-box span {
+  display: block;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  text-align: center;
+}
+
+/* for mobile screen */
+@media screen and (max-width: 768px) {
+  
+  .container {
+    width: 90%;
+  }
+  
+}
